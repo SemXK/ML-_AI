@@ -120,12 +120,12 @@ if __name__ == '__main__':
 
   # & Saves a PyTorch obj
   # PATH.mkdir(parents=True, exist_ok=True,)
-  PATH = Path("TrainedModels")
-  PATH_NAME = "ExportedModelV1.pth"
-  SAVE_PATH = PATH / PATH_NAME
+  # PATH = Path("TrainedModels")
+  # PATH_NAME = "ExportedModelV1.pth"
+  # SAVE_PATH = PATH / PATH_NAME
   # torch.save(obj=externalModel.state_dict(), f=SAVE_PATH)                         
   # & Load model
-  externalModel.load_state_dict(torch.load(f=SAVE_PATH)) 
+  # externalModel.load_state_dict(torch.load(f=SAVE_PATH)) 
 
   # Prediction & Plot
   from typing import List, Tuple
@@ -159,7 +159,7 @@ if __name__ == '__main__':
 
   predPlotImge(
     model=externalModel,
-    imagePath="data\\pizza_steak_sushi\\images.jpg",
+    imagePath="data\\pizza_steak_sushi\\steak.jpg",
     classNames=classNames,
   )
 
